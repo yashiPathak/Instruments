@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Amatic+SC:wght@700&family=Anek+Gujarati:wght@700&family=Baloo+Da+2:wght@559&family=Barlow&family=Barlow+Condensed&family=Bebas+Neue&family=Berkshire+Swash&family=Bree+Serif&family=Dancing+Script&family=Francois+One&family=Montserrat:wght@600&family=Nanum+Myeongjo:wght@700&family=Nunito:wght@600&family=Orelega+One&family=Oswald&family=PT+Sans+Caption&family=PT+Serif&family=Padauk:wght@700&family=Passion+One:wght@700&family=Pontano+Sans&family=Poppins:wght@400;500;700&family=Pragati+Narrow&family=Prata&family=Roboto+Condensed&family=Roboto:wght@100;300;700&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Saira:wght@600&family=Send+Flowers&family=Signika+Negative:wght@300;400&family=Space+Grotesk:wght@500&family=Space+Mono&family=Work+Sans:wght@600&display=swap');
+
+/* @font-face{
+    src: url("fonts/Aeonik-Bold.ttf");
+    
+    font-weight: 900;
+}
+
+@font-face{
+    src: url("fonts/Aeonik-Regular.ttf");
+    
+    font-weight: 500;
+}
+
+@font-face{
+    src: url("fonts/Aeonik-Medium.ttf");
+    
+    font-weight: 400;
+}
+
+@font-face{
+    src: url("fonts/Aeonik-Light.ttf");
+    
+    font-weight: 200; */
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto Condensed', sans-serif;
+    width:100%;
+    height:100%;
+}
+
+#cursor {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid red;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+#main{
+    width:100vw;
+    position: relative;
+    background-color: black;
+    border-top: 1px solid transparent;
+    overflow-x: hidden;
+    
+}
+
+
+.navbar{
+    background-color: black;
+    height: 60px;
+    padding: 0.5rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar_logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+.navbar_link{
+    color: white;
+    text-decoration: none;
+    padding-left: 1rem;
+    font-style: 1.5rem;
+}
+
+
+#videodiv{
+    width:100vw;
+    height:100vh;
+    /* background-color: azure; */
+    margin-top: 5vw;
+    position: relative;
+    overflow-x: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+#main::-webkit-scrollbar{
+    display: none;
+}
+
+#videodiv iframe{
+    width:80vw;
+    height:90vh;
+   
+}
+
+
+#downdiv{
+    padding-top: 4vw;
+    width:100vw;
+    /* height:100vh; */
+    color: #fff;
+    /* background-color: aquamarine; */
+}
+
+#downdiv h1{
+       text-align: center;
+       margin-top: 10vw;
+       
+       font-size: 4vw;
+       font-weight:500;
+}
+
+.photodiv{
+    position: relative;
+    width:100vw;
+    height:80vh;
+    display: flex;
+    color: #fff;
+    
+    /* background-color: beige; */
+}
+
+.photodiv h2{
+    margin-top: 10vw;
+    margin-left: 15vw;
+    font-weight: 400;
+
+}
+
+#imgdiv{
+    height:100%;
+    width:45vw;
+    background-image: url(https://images.prismic.io/instrument-v5/f43c62bc-9a19-4771-a13e-b8b0d93e6d6b_72andsunny-nyc_ISAKTINER-8376-edit.jpg?auto=compress,format&w=1920);
+    background-size: cover;
+    background-position: center;
+}
+
+#photodiv1{
+    margin-top: 20vw;
+    padding-left: 2vw;
+      
+}
+
+#photodiv2{
+    margin-top: 10vw;
+    padding-left: 2vw;
+      
+}
+
+#imgdiv2{
+    height:100%;
+    width:45vw;
+    background-image: url(https://images.prismic.io/instrument-v5/f3b20989-779a-41a5-9f19-668bcbda94a5_fastco_women_thumbnail.png?auto=compress,format&w=1920);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10vw;
+}
+
+#photodiv3{
+    margin-top: 10vw;
+    padding-left: 2vw;
+      
+}
+
+#imgdiv3{
+    height:100%;
+    width:45vw;
+    background-image: url(https://images.prismic.io/instrument-v5/7c872db1-8972-4a3e-b53f-9aa7d179fd4f_what-we-do.jpg?auto=compress,format&w=1920);
+    background-size: cover;
+    background-position: center;
+}
+
+#h22{
+    margin-top: 50vw;
+}
+
+button{
+    padding: 1vw 2vw 1vw  2vw;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 3vw;
+    margin-left: 45vw;
+    
+}
+
+#our i{
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+
+#picdiv{
+    width:100vw;
+    margin-top: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#pic{
+    width:100%;
+    height:65vh;
+    background-color: red;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+#pic img{
+    object-fit: cover;
+    object-position: center;
+    height:65vh;
+}
+
+#picdiv h2{
+    margin-bottom: 2vw;
+}
+
+#picdiv p{
+    letter-spacing: 0.1vw;
+}
+
+#picdiv1{
+    width:45vw;
+    height:100vh;
+    /* background-color: aqua; */
+
+}
+
+#picdiv2{
+    width:45vw;
+    height:100vh;
+    /* background-color:aquamarine; */
+}
+
+#logodiv{
+    width:100vw;
+    height:80vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width:20vw;
+    height:20vh;
+    /* background-color: bisque; */
+}
+
+#logo1{
+    background-image: url(https://images.prismic.io/instrument-v5/a00f63c1-2925-4338-9bd7-33d84ecfddc0_facebook.png?auto=compress,format&w=640);
+    background-size: cover;
+    background-position: center;
+    animation: slide 5s infinite;
+}
+
+#logo2{
+    background-image: url(https://images.prismic.io/instrument-v5/0111080c-93e6-4eec-bdbf-23d15c792dbe_new-knowledge.png?auto=compress,format&w=640);
+    background-size: cover;
+    background-position: center;
+    animation: slide2 5s infinite;
+}
+
+#logo3{
+    background-image: url(https://images.prismic.io/instrument-v5/2bcc43c1-4e9f-4eea-9f9d-5110882ea43f_levis.png?auto=compress,format&w=640);
+    background-size: cover;
+    background-position: center;
+    animation: slide3 5s infinite;
+}
+
+@keyframes slide{
+        20%{
+            background-image: url(https://images.prismic.io/instrument-v5/a00f63c1-2925-4338-9bd7-33d84ecfddc0_facebook.png?auto=compress,format&w=640);
+            background-size: cover;
+        }
+        40%{
+            background-image: url(https://images.prismic.io/instrument-v5/979a9dff-e6a1-4a2a-8b52-8fd931d66199_netflix.png?auto=compress,format&w=640);
+            background-size: cover;
+        }
+        60%{
+            background-image: url(https://images.prismic.io/instrument-v5/40ccfd06-4af9-45e8-89ec-5117acdcb4bc_nike.png?auto=compress,format&w=640);
+            background-size: cover;
+        }
+        80%{
+            background-image: url(https://images.prismic.io/instrument-v5/e1231664-2aec-4c6b-b2f7-bb5e96d9b19b_intercom.png?auto=compress,format&w=640);
+            background-size: cover;
+        }
+        100%{
+            background-image: url(https://images.prismic.io/instrument-v5/ff178b0b-7634-4c21-a0a0-87aa52eccc79_stumptown.png?auto=compress,format&w=640);
+            background-size: cover;
+        }
+}
+
+@keyframes slide2{
+    20%{
+        background-image: url(https://images.prismic.io/instrument-v5/0111080c-93e6-4eec-bdbf-23d15c792dbe_new-knowledge.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(https://images.prismic.io/instrument-v5/d2a5697a-9e75-46df-8b35-e830b4b255bf_better.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(https://images.prismic.io/instrument-v5/bb20339a-c823-46b2-95eb-2ba9d6bfeba8_path.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(https://images.prismic.io/instrument-v5/16c78869-782a-4cfc-8f2b-f8f58dfed53b_gopro.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(https://images.prismic.io/instrument-v5/f70f8472-5bb3-4c7b-bf06-2da4e2d5e771_samsung.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+}
+
+@keyframes slide3{
+    20%{
+        background-image: url(https://images.prismic.io/instrument-v5/2bcc43c1-4e9f-4eea-9f9d-5110882ea43f_levis.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(https://images.prismic.io/instrument-v5/c6fefaec-e49c-41ff-a372-0714a4f2b631_airbnb.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(https://images.prismic.io/instrument-v5/76527759-efe2-4b12-8708-2e1a54e13960_dwell.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(https://images.prismic.io/instrument-v5/ef25fd23-41ed-427b-b0d4-cd1164b835fe_one-medical.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(https://images.prismic.io/instrument-v5/6c297592-f4ad-4b10-82bb-9287776da2bc_specialized.png?auto=compress,format&w=640);
+        background-size: cover;
+    }
+}
+
+#footer{
+    width:100vw;
+    height:70vh;
+display: flex;
+}
+
+.list{
+    width:15vw;
+    height:50vh;
+    margin-top: 10vw;
+    margin-left: 2vw;
+}
+
+.list h2{
+    margin-top: 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+#leftfooter{
+    width:40vw;
+    height:10vh;
+
+    margin-top: 55vh;
+    margin-left: 22vw;
+    position :relative;
+}
+
+@media  screen and (max-width : 477px) {
+    #videodiv iframe {
+     height: 100%;
+     top: 0%;
+    }
+ 
+    #photodiv1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+
+
+    #picdiv #pic img {
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+ 
+    #imgdiv {
+     width: 100vw;
+     height: 50vh;
+     margin-left: 20%;
+    }
+ 
+    .photodiv h2 {
+     margin-left: 10%;
+    }
+ 
+    #photodiv2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+ 
+    #imgdiv2 {
+     width: 100vw;
+     height: 50vh;
+     margin-left: 20%;
+    }
+ 
+    #photodiv3 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+    }
+ 
+    #imgdiv3 {
+     width: 100vw;
+     height: 50vh;
+     margin-left: 10%;
+    }
+ 
+    h1 {
+     font-size: 4em;
+     /* margin-block-start: 0.0em;
+     margin-block-end: 0.0em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px; */
+     margin-left: 10%;
+     font-weight: bold;
+ }
+ 
+    #h22{
+      font-size: 4rem;
+      margin-left: 10%;
+      margin-left: 10%;
+    }
+ 
+    #picdiv {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+    }
+ 
+    #pic {
+     width: 100vw;
+     position: absolute;
+     left: 0%;
+    }
+
+ 
+    #e {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+    }
+ 
+    #picdiv1 h2 {
+     z-index: 9999;
+     position: absolute;
+     top: 61%;
+     left: 5%;
+     right: 5%;
+    }
+ 
+    #picdiv p {
+     z-index: 999;
+     position: absolute;
+     top: 62%;
+     left: 5%;
+     right: 5%;
+    }
+    
+    #picdiv2 #pic {
+       position: absolute;
+       top: 67%; 
+    }
+    
+    #picdiv2 h2 {
+     z-index: 9999;
+     position: absolute;
+     top: 76%;
+     left: 5%;
+     right: 5%;
+    }
+ 
+    #picdiv2 p {
+     z-index: 999;
+     position: absolute;
+     top: 78%;
+     left: 5%;
+     right: 5%;
+    }
+ 
+    #footer {
+     display: flex;
+     flex-direction: column;
+    }
+    #list1 p {
+     font-size: 1em;
+    }
+ 
+    #list2 p {
+     font-size: 1em;
+    }
+    #list2 {
+     margin-top: 0%;
+    }
+ 
+    .list {
+     display: block;
+     margin-left: 10%;
+    }
+ 
+    .navbar_toggle .bar {
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     transition: all 0.3s ease-in-out;
+     background: white;
+     display: block;
+     cursor: pointer;
+     right: 20%;
+ }
+ 
+ 
+ #mobile-menu{
+     position: absolute;
+     top: 15%;
+     right: 5%;
+     transform: translate(5%, 20%);
+ }
+ 
+ #mobile-menu.is-active .bar:nth-child(2){
+     opacity: 0;
+ }
+ 
+ #mobile-menu.is-active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+ }
+ 
+ #mobile-menu.is-active .bar:nth-child(3){
+     transform: translateY(-8px) rotate(-45deg);
+ 
+ }
+ 
+ 
+ .navbar_link{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .navbar_menu{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(4, 100px);
+     position: absolute;
+     width: 100%;
+     top: -1000px;
+ }
+ 
+ }
